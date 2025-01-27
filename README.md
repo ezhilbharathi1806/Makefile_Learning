@@ -117,4 +117,9 @@ Here is a comprehensive list of **`gcc`** and **`g++`** command-line options and
    ```bash
    gcc -g -o debug_program debug_program.c
    ```
-
+---
+### **Convert object file to hex files**
+  ```bash
+  gcc -c your_program.c -o your_program.o
+  objcopy -O ihex your_program.o your_program.hex
+  ```
